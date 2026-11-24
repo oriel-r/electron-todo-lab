@@ -1,0 +1,50 @@
+{
+  "name": "electron-todo-lab",
+  "productName": "Electron Todo Lab",
+  "version": "1.0.0",
+  "description": "Todo app en Electron + React + Vite + TypeScript + SQLite",
+  "main": ".vite/build/main.cjs",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Oriel Romero",
+  "license": "MIT",
+  "repository": "https://github.com/tu-usuario-github/electron-todo-lab",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^12.21.0",
+      "onFail": "download"
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^8.0.1",
+    "@electron-forge/maker-deb": "^8.0.1",
+    "@electron-forge/maker-squirrel": "^8.0.1",
+    "@electron-forge/maker-zip": "^8.0.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^8.0.1",
+    "@electron-forge/plugin-vite": "^8.0.1",
+    "@electron-forge/publisher-github": "^8.0.1",
+    "@electron-forge/shared-types": "^8.0.1",
+    "@electron/rebuild": "^4.2.1",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "electron": "^45.3.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "update-electron-app": "^3.3.0"
+  }
+}
