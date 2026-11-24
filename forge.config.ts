@@ -44,8 +44,11 @@ const config: ForgeConfig = {
     {
       name: '@electron-forge/publisher-github',
       config: {
-        owner: 'oriel-r',
-        repository: 'electron-todo-lab'
+        repository: {
+          owner: 'oriel-r',
+          name: 'electron-todo-lab'
+        },
+        draft: false
       }
     }
   ]

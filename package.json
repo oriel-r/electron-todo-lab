@@ -14,7 +14,7 @@
   "keywords": [],
   "author": "Oriel Romero",
   "license": "MIT",
-  "repository": "https://github.com/tu-usuario-github/electron-todo-lab",
+  "repository": "https://github.com/oriel-r/electron-todo-lab",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
