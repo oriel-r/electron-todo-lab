@@ -1,0 +1,35 @@
+name: Build - Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup Environment
+        uses: pnpm/setup@v3
+        with:
+          version: 12
+          runtime: node@26
+          cache: true
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Publish
+        run: pnpm run publish
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  

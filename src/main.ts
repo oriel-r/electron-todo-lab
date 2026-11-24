@@ -4,6 +4,11 @@ import { initDatabase, closeDatabase, getDatabasePath } from "./main/db"
 import { registerIpcInvokes } from './main/ipc';
 import todoService from './main/todos.service';
 import { IPC_CHANNELS, MainLogEvent } from './shared/types';
+import { updateElectronApp } from 'update-electron-app';
+
+if (require('electron-squirrel-startup')) app.quit();
+
+updateElectronApp()
 
 let mainWindow: BrowserWindow | null = null
 
