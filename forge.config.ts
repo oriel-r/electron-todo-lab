@@ -10,11 +10,7 @@ const config: ForgeConfig = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {
-        options: {
-
-        }
-      }
+      config: {}
     }
   ],
   plugins: [
@@ -48,8 +44,8 @@ const config: ForgeConfig = {
     {
       name: '@electron-forge/publisher-github',
       config: {
-        owner: 'matheusfelipe808',
-        repository: 'electron-test'
+        owner: 'oriel-r',
+        repository: 'electron-todo-lab'
       }
     }
   ]
