@@ -168,7 +168,7 @@ export default function App() {
     <main className="layout">
       <section className="card">
         <header className="header">
-          <h1>Electron Todo Lab</h1>
+          <h1>Electron Todo Lab ✨</h1>
           <span className="badge">
             v{appInfo?.appVersion ?? '—'} · {appInfo ? (appInfo.isPackaged ? 'Prod' : 'Dev') : 'Sin IPC'}
           </span>

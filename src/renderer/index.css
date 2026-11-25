@@ -1,13 +1,13 @@
 :root {
   color-scheme: dark;
-  --bg: #0f172a;
-  --surface: #1e293b;
-  --surface-alt: #0b1120;
-  --border: #334155;
+  --bg: #071917;
+  --surface: #0f2924;
+  --surface-alt: #061311;
+  --border: #1e463e;
   --text: #f8fafc;
   --muted: #94a3b8;
-  --accent: #38bdf8;
-  --accent-hover: #0ea5e9;
+  --accent: #34d399;
+  --accent-hover: #10b981;
   --success: #34d399;
   --danger: #f87171;
 }
@@ -66,9 +66,9 @@ body {
   font-size: 0.75rem;
   padding: 2px 8px;
   border-radius: 999px;
-  background: rgba(56, 189, 248, 0.15);
+  background: rgba(52, 211, 153, 0.15);
   color: var(--accent);
-  border: 1px solid rgba(56, 189, 248, 0.35);
+  border: 1px solid rgba(52, 211, 153, 0.35);
 }
 
 .todo-form {
@@ -109,7 +109,7 @@ body {
 
 .btn-primary {
   background: var(--accent);
-  color: #082f49;
+  color: #022c22;
   border-color: transparent;
   font-weight: 600;
 }

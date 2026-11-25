@@ -1,7 +1,7 @@
 {
   "name": "electron-todo-lab",
   "productName": "Electron Todo Lab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Todo app en Electron + React + Vite + TypeScript + SQLite",
   "main": ".vite/build/main.cjs",
   "scripts": {
